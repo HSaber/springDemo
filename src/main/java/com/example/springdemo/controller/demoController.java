@@ -8,6 +8,6 @@ public class demoController {
     @RequestMapping("/hello")
     public String hello(){
         System.out.println("hello to world");
-        return "Today is wednesday by @huhuan  !!!!";
+        return "Today is wednesday  by huhuan 712 !!!!";
     }
 }
