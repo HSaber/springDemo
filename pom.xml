@@ -78,19 +78,14 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+	<!-- omitted xml -->
+	<distributionManagement>
+		<repository>
+			<!--必须与 settings.xml 的 id 一致-->
+			<id>iitoo-iitoo-admin-ci-iitoo-admin</id>
+			<name>ci-iitoo-admin</name>
+			<url>https://iitoo-maven.pkg.coding.net/repository/iitoo-admin/ci-iitoo-admin/</url>
+		</repository>
+	</distributionManagement>
 
 </project>
